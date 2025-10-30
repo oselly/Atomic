@@ -114,7 +114,7 @@ const Tasks: React.FC = () => {
 
     return (
         <Box sx={{ display: "flex", flexDirection: "column", alignItems: "flex-start", mt: 4, width: "100%" }}>
-            <Button variant="contained" color="primary"
+            <Button variant="contained" color="primary" disabled={!currentUser} 
                 onClick={() => {
                     setEditingTask(null);
                     setFormOpen(true);
