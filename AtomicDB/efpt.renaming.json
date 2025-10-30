@@ -1,0 +1,15 @@
+﻿[
+   {
+      "SchemaName": "dbo",
+      "TablePatternReplaceWith": "",
+      "TableRegexPattern": "^(tbl)",
+      "Tables": [
+         {
+            "Columns": [ ],
+            "Name": "tblTask",
+            "NewName": "TaskDB"
+         }
+      ],
+      "UseSchemaName": false
+   }
+]
