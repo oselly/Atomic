@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AtomicAPI.Models\AtomicAPI.Models.csproj" />
+    <ProjectReference Include="..\AtomicAPI.Services.Abstractions\AtomicAPI.Services.Abstractions.csproj" />
+    <ProjectReference Include="..\AtomicDB\AtomicDB.csproj" />
+  </ItemGroup>
+
+</Project>
