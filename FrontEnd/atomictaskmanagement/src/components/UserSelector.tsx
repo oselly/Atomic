@@ -48,7 +48,7 @@ const UserSelector: React.FC = () => {
     }
 
     return (
-        <FormControl fullWidth size="small" variant="outlined">
+        <FormControl fullWidth size="small" variant="outlined" error={!currentUser}>
             <InputLabel id="user-selector-label">Active User</InputLabel>
             <Select
                 labelId="user-selector-label"
@@ -63,6 +63,11 @@ const UserSelector: React.FC = () => {
                         </MenuItem>
                     ))}
             </Select>
+            {!currentUser && (
+                <Typography variant="caption" color="error" sx={{ mt: 0.5 }}>
+                    Please select a user
+                </Typography>
+            )}
         </FormControl>
     );
 };
