@@ -38,6 +38,7 @@ namespace AtomicAPI.Models.Core
             IsCancelled = dbTask.IsCancelled,
             CancelledDate = dbTask.CancelledDate,
             LastModifiedDate = dbTask.LastModifiedDate,
+            CreatedDate = dbTask.CreatedDate,
             CreatedBy = dbTask.CreatedByUser != null ? User.ToModel(dbTask.CreatedByUser) : null,
             AssignedTo = dbTask.AssignedToUser != null ? User.ToModel(dbTask.AssignedToUser) : null
         };
