@@ -19,6 +19,10 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "AtomicDB.Sql", "AtomicDB.Sq
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicAPI.Services.Abstractions", "AtomicAPI.Services.Abstractions\AtomicAPI.Services.Abstractions.csproj", "{514D646C-AF40-D093-6207-F03173EAA1D1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AtomicUnitTests", "AtomicUnitTests\AtomicUnitTests.csproj", "{E785709D-657B-FB4B-825F-5C5E7C2EE8AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{2C081901-8904-45BB-B84E-D5D4A66C1EC5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,10 @@ Global
 		{514D646C-AF40-D093-6207-F03173EAA1D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{514D646C-AF40-D093-6207-F03173EAA1D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{514D646C-AF40-D093-6207-F03173EAA1D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E785709D-657B-FB4B-825F-5C5E7C2EE8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E785709D-657B-FB4B-825F-5C5E7C2EE8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E785709D-657B-FB4B-825F-5C5E7C2EE8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E785709D-657B-FB4B-825F-5C5E7C2EE8AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{18FD246C-7EF4-4DBE-9D3E-2BA9DF43EAE0} = {A88D1BF0-4DA7-4F94-95AA-FFCC68A465B0}
 		{847DB521-F616-43A7-AE34-5156EF0F246B} = {A88D1BF0-4DA7-4F94-95AA-FFCC68A465B0}
 		{514D646C-AF40-D093-6207-F03173EAA1D1} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E785709D-657B-FB4B-825F-5C5E7C2EE8AF} = {2C081901-8904-45BB-B84E-D5D4A66C1EC5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B9010BDD-3F55-4010-836B-8E5F1C178E63}
