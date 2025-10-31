@@ -84,7 +84,7 @@ const Tasks: React.FC = () => {
         { field: 'dueDate', headerName: 'Due Date', width: 150, valueGetter: (value, row) => row.dueDate ? new Date(row.dueDate).toLocaleDateString("en-GB") : '' },
         { field: 'description', headerName: 'Description', width: 150 },
         { field: 'createdBy', headerName: 'Created by', width: 150, valueGetter: (value, row) => row.createdBy ? `${row.createdBy.name}` : '' },
-        { field: 'createdDate', headerName: 'Created Date', width: 150, valueGetter: (value, row) => new Date(row.createdDate).toLocaleDateString("en-GB") },
+        { field: 'createdDate', headerName: 'Created Date', width: 150, valueGetter: (value, row) => new Date(row.createdDate!).toLocaleDateString("en-GB") },
         { field: 'isCompleted', headerName: 'Completed', width: 150, valueGetter: (value, row) => row.isCompleted && row.completedDate ? `Yes - ${new Date(row.completedDate).toLocaleDateString("en-GB")}` : 'No' },
         {
             field: 'actions', headerName: 'Actions', width: 150,
