@@ -2,9 +2,13 @@
 
 Hello, Thanks for taking the time to look at the work. It was an enjoyable experience going through the assessment. Just as a clarification which I'm sure you've gathered from my experience, I've spent the last 4 years primarily working in Blazor. React is new to me and my previous experience was in vue.js, it's been feeling familiar and easy enough picking the javascript style frameworks back up but there's a lot that i'm still a little rusty with and haven't had time with this technical assessment to properly reaquaint myself with so there's a few things that I'm not happy with that I'll mention. I didn't have time to get properly set back up with vs code as well so for the purposes of this project I've commited the cardinal sin of running the react app in visual studio. Hopefully that doesn't cause issues if you're running it properly in vs code, but there's a chance it might.
 
+AI Usage - My general opinion is that AI is a tool that should be utilised but done so responsibly. It's great for speeding manual tasks up, but often code will be missing features/badly formatted/inconsistent. I typically will make a quick mental decision, to work out if it's quicker for me to do something, or for the AI to do it whilst factoring in the editing the work will need after it's done. As per the above experience discussion, I therefore utilised it more towards the frontend application compared to the backend, but everything was edited/understood/went through a few iterations until I was happy with it.
+
 Setup
 
 Backend/Database
+
+Sln file is found in the root folder and is just called Atomic.sln
 
 The project was built to be run on a localhost SQL Express database. 
 
@@ -22,8 +26,11 @@ This should let the API then run and you should be able to explore the end point
 
 Front End
 
+Sln file is found in the .\FrontEnd\atomictaskmanagement\ folder and is just called AtomicTaskManagement.sln
+
 Hopefully it should just be a case of installing the required packages via npm install and then running the solution. The base URL for the API is currently hardcoded into the the BaseService.ts file, this is awful, I know it's awful and wouldn't get deployed anywhere other than localhost. I just ran out of time to get the local environment variables (visual studio probably didn't help). You might just need to check that this is the same as your API url. 
 
+Unfortunately I ran out of time to get the front end tests plugged into the React app. The Client side grid has UI Controls for filtering/sorting etc but they're handled natively by the Datagrid Component rather than interacting with the controls on the API end point. 
 
 Design Considerations (In no particular order as they're copied from my notes as I was working) 
 
@@ -44,6 +51,8 @@ Implement base service classes using Types to saving having to repeat basic crud
 Move app settings values out of the projects and pull them directly from keyvaults
 Login system -> Didn't have time/localhost functionality to Implement proper logins and to implement bearer token logins etc.
 Implement extra logging functionality like Serilog etc
+I wasn't happy with the structure of the code surrounding the confirmation dialog popups. I'd like to have reworked that if I had time
+
 
 Security
 Basic CORS blocking and HTTPS redirection was implemented.
